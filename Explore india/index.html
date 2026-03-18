@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore India</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <h2 class="logo">Explore India</h2>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#destinations">Destinations</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 data-aos="fade-down">Discover <span id="typing"></span></h1>
+    <p data-aos="fade-up">Your journey begins here</p>
+    <button data-aos="zoom-in">Explore Now</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section" data-aos="fade-up">
+  <h2>About Us</h2>
+  <p>
+    Explore India is your gateway to discovering the beauty, culture, and diversity of India.
+    From beaches to mountains, we create unforgettable journeys.
+  </p>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations" class="section" data-aos="fade-up">
+  <h2>Popular Destinations</h2>
+
+  <input type="text" id="search" placeholder="Search destinations..." />
+
+  <div class="cards">
+
+    <div class="card" data-name="goa"
+      onclick="openModal('Goa','Beautiful beaches and nightlife','https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800')"
+      data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800">
+      <h3>Goa</h3>
+      <p>Beaches & Nightlife</p>
+    </div>
+
+    <div class="card" data-name="manali"
+      onclick="openModal('Manali','Snowy mountains and adventure','https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=800')"
+      data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=800">
+      <h3>Manali</h3>
+      <p>Snow & Mountains</p>
+    </div>
+
+    <div class="card" data-name="jaipur"
+      onclick="openModal('Jaipur','Royal palaces and heritage','https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800')"
+      data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800">
+      <h3>Jaipur</h3>
+      <p>Royal Heritage</p>
+    </div>
+
+    <div class="card" data-name="kerala"
+      onclick="openModal('Kerala','Backwaters and greenery','https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800')"
+      data-aos="zoom-in">
+      <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=800">
+      <h3>Kerala</h3>
+      <p>Backwaters & Nature</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section dark" data-aos="fade-up">
+  <h2>Tour Packages</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Goa Trip</h3><p>3 Days</p><p>₹7,999</p>
+      <button onclick="openBooking('Goa Trip')">Book Now</button>
+    </div>
+
+    <div class="card">
+      <h3>Manali Adventure</h3><p>5 Days</p><p>₹12,999</p>
+      <button onclick="openBooking('Manali Adventure')">Book Now</button>
+    </div>
+
+    <div class="card">
+      <h3>Jaipur Heritage</h3><p>2 Days</p><p>₹6,499</p>
+      <button onclick="openBooking('Jaipur Heritage')">Book Now</button>
+    </div>
+
+    <div class="card">
+      <h3>Kerala Retreat</h3><p>4 Days</p><p>₹10,999</p>
+      <button onclick="openBooking('Kerala Retreat')">Book Now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" data-aos="fade-up">
+  <h2>Why Choose Us</h2>
+  <div class="cards">
+    <div class="card"><h3>Affordable</h3><p>Best prices guaranteed</p></div>
+    <div class="card"><h3>Expert Guides</h3><p>Friendly professionals</p></div>
+    <div class="card"><h3>24/7 Support</h3><p>Always here for you</p></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section dark" data-aos="fade-up">
+  <h2>Our Achievements</h2>
+  <div class="cards">
+    <div class="card"><h3>10K+</h3><p>Travelers</p></div>
+    <div class="card"><h3>500+</h3><p>Destinations</p></div>
+    <div class="card"><h3>4.8⭐</h3><p>Rating</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" data-aos="fade-up">
+  <h2>Testimonials</h2>
+  <div class="cards">
+    <div class="card"><p>"Amazing trip!"</p><h4>- Rahul</h4></div>
+    <div class="card"><p>"Loved the experience"</p><h4>- Priya</h4></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section dark" data-aos="fade-up">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800">
+    <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?w=800">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800">
+    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=800">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img">
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 Explore India. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>
